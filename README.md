@@ -1,4 +1,4 @@
-##Scrape multi-site job listing
+## Scrape multi-site job listing
 well hello there👋. So today i'm gonna show you the next project. so what todo is i have to scrape from multi-site for job, like from linkedIn, Jobstreet, Glints,and other site.
 because there is so many list of jobs, so i'm gonna get 5000+ data of listing. because there is so many ways to scrape i'm gonna use Python cause it much easier to learn than other language
 (for me).
