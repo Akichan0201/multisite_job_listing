@@ -5,7 +5,14 @@ def open_file(filename):
     with open (filename, 'r', encoding='utf-8') as f:
         return f.read()
 
-def get_page(html):
+def browser_controller(driver, link):
+    driver.get(link)
+    # find_element, click
+    print('LinkedIn driver success opening page')
+    return driver.page_source
+
+def get_page(driver, link):
+    html = browser_controller(driver, link)
     soup = BeautifulSoup(html, 'html.parser')
     jobs = soup.find('ul', class_='jobs-search__results-list')
     jobs = jobs.find_all('li')
@@ -41,7 +48,7 @@ def get_page(html):
         }
         job_list.append(dict)
         
-    print(f'linkedin success')
+    print(f'linkedin got {len(job_list)} data')
     return job_list
      
 if __name__=='__main__':
