@@ -1,18 +1,38 @@
-## Scrape multi-site job listing
-well hello there👋. So today i'm gonna show you the next project. so what todo is i have to scrape from multi-site for job, like from linkedIn, Jobstreet, Glints,and other site.
-because there is so many list of jobs, so i'm gonna get 5000+ data of listing. because there is so many ways to scrape i'm gonna use Python cause it much easier to learn than other language
-(for me).
+# Multi-Site Job Listing Scraper
 
-i will separate it into some different files for each link and function so we don't have to change every code to every site
+A modular Python scraper that collects job listings from LinkedIn, JobStreet, and Glints using Selenium, BeautifulSoup, and Pandas.
 
-### What to do?
-in here i will use 2 modules for scrape cause we didn't know which one can be more effective to scrape.
+## STAR Summary
 
-**1. make the file for every function from inisiation every module, links every site, and for export data(to csv or excel)**
-first, make inisiate the bs4 and selenium so from that we can call in another file. after that make a new file to get/extract data from every links. Try it with one site first so you can figure out how the output would look like. In here i would get the HTML first because i will get the data from it. and after that last you can make a new file again for export function.
+**Situation:** Job postings are scattered across different job platforms. Collecting them manually is time-consuming and inconsistent.
 
-**2. Always give the parameter for each function**
-why? cause we can know which one the function we called.  it would be much easier for us to know specifically about the function.
+**Task:** Create a script that scrapes job listings from multiple job sites and consolidates them into a structured format for easy analysis.
 
-if you still confused just check out the code that i made. for file _main.py_ you can change it to anaother links based on the website you choose.
+**Action:**  
+- Automated site interaction using Selenium, including dynamic loading and pagination  
+- Parsed job data such as title, company, location, and link using BeautifulSoup  
+- Structured the code into separate functions for each platform to keep it clean and manageable  
+- Handled pop-ups such as cookie banners by detecting and clicking the accept button before scraping begins  
+- Used Pandas to organize and export the data into a CSV file
+
+**Result:**  
+A single tool that scrapes jobs from LinkedIn, JobStreet, and Glints, saving the listings in one CSV file for analysis or reporting.
+
+## Features
+
+- Supports scraping from LinkedIn, JobStreet, and Glints
+- Uses a modular structure for easier maintenance and extension
+- Handles pop-ups like cookie consent using Selenium element detection
+- Collects key job details and saves them in CSV format
+
+## How to Use
+
+```bash
+git clone https://github.com/Akichan0201/multisite_job_listing.git
+cd multisite_job_listing
+pip install -r requirements.txt
+python main.py
+---
+
+Let me know if you want to add screenshots, filters by keyword or location, or convert this into a web app or CLI tool.
    
