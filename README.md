@@ -33,6 +33,4 @@ cd multisite_job_listing
 pip install -r requirements.txt
 python main.py
 ---
-
-Let me know if you want to add screenshots, filters by keyword or location, or convert this into a web app or CLI tool.
    
